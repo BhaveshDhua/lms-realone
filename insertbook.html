@@ -11,12 +11,12 @@
                 var fso = CreateObject("Scripting.FileSystemObject"); 
                 var s   = fso.CreateTextFile("<C:\Users\Admin\Desktop\lms realone\insertbook.html", True);
 
-                var firstName = document.getElementById('FirstName');
+                var isbn = document.getElementById('isbn');
                 var lastName  = document.getElementById('lastName');
                 
 
 
-                s.writeline("First Name :" + FirstName);
+                s.writeline("isbn :" + isbn);
                 s.writeline("Last Name :" + lastName);
 
                 s.writeline("-----------------------------");
