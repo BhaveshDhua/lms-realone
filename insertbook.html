@@ -13,6 +13,8 @@
 
                 var firstName = document.getElementById('FirstName');
                 var lastName  = document.getElementById('lastName');
+                
+
 
                 s.writeline("First Name :" + FirstName);
                 s.writeline("Last Name :" + lastName);
@@ -24,7 +26,7 @@
          
     </head>
     
-    <form action="insertbook_complete.html" method="post">
+    <form action="insertbook_complete.html" method="post" onSubmit="WriteToFile(this)">
  
         <table border="2" align="center" cellpadding="5" cellspacing="5">
             <tr>
