@@ -2,6 +2,27 @@
 <html>
 <body bgcolor="87ceeb">
     <center><h2><b>Library Management System</b></h2></center>
+
+    <head>
+        <script>
+            function WriteToFile(passForm) 
+            {
+ 
+                set fso = CreateObject("Scripting.FileSystemObject"); 
+                set s   = fso.CreateTextFile("<your Path>/filename.txt", True);
+
+                var firstName = document.getElementById('FirstName');
+                var lastName  = document.getElementById('lastName');
+
+                s.writeline("First Name :" + FirstName);
+                s.writeline("Last Name :" + lastName);
+
+                s.writeline("-----------------------------");
+                s.Close();
+}
+        </script>
+         
+    </head>
     
     <form action="insertbook_complete.html" method="post">
  
